@@ -4,7 +4,7 @@ var stitchChain
 
 function newStitch(){
 	stitchCluster = stitches[Math.round((Math.random() * 3))];
-	stitchChain = Math.round((Math.random() * 50) + 1);
+	stitchChain = Math.round((Math.random() * 34) + 1);
 }
 
 function reverse(s) {

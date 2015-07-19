@@ -1,5 +1,12 @@
-p, h1 {
+h1 {
+	text-align:center;
+	font-family:'Berkshire Swash', Helvetica, sans-serif;
+	font-size:2.1em;
+}
+
+p {
 	text-align: center;
 	letter-spacing: 2px;
 	font-family:monospace;
 }
+
