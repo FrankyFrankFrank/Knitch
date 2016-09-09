@@ -2,6 +2,8 @@ var stitches = ["-", "/", "O", "T"];
 var stitchCluster
 var stitchChain
 
+var knitch = document.getElementById('knitch');
+
 function newStitch(){
 	stitchCluster = stitches[Math.round((Math.random() * 3))];
 	stitchChain = Math.round((Math.random() * 34) + 1);
@@ -24,10 +26,13 @@ function getStitch() {
 		}
 	}
 	half = half.substring(0,20);
-	full = half + reverse(half) + "<br>";
+	full = half + reverse(half);
 	return full;
 }
 
 for (var x = 0; x <= 4; x++) {
-	document.write("<p>" +getStitch() + "</p>");
+	var p = document.createElement('p');
+  var t = document.createTextNode(getStitch());
+	p.appendChild(t);
+  knitch.appendChild(p);
 }
