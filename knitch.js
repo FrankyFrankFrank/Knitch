@@ -30,9 +30,16 @@ function getStitch() {
 	return full;
 }
 
-for (var x = 0; x <= 4; x++) {
-	var p = document.createElement('p');
-  var t = document.createTextNode(getStitch());
-	p.appendChild(t);
-  knitch.appendChild(p);
+function run(){
+	knitch.innerHTML = '';
+  for (var x = 0; x <= 4; x++) {
+    var p = document.createElement('p');
+    var t = document.createTextNode(getStitch());
+    p.appendChild(t);
+    knitch.appendChild(p);
+  }
 }
+
+run();
+
+document.onkeydown= function() {run();};
